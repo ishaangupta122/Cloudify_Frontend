@@ -14,6 +14,7 @@ export const HomePageData = {
     buttonLink: "#",
     dashboardImage: "/card_img_7.png",
     backgroundImage: "/home_banner_bg.png",
+    backgroundOverlayImage: "/home_banner_overlay.png",
   },
 
   featuresSection: {
@@ -23,19 +24,19 @@ export const HomePageData = {
     features: {
       topRow: [
         {
-          image: "/card_img_1.png",
+          image: "/card_img_2.png",
           title: "Zero-Capex Regional Deployments",
           description:
             "Eliminate the upfront hardware and deployment costs. Our platform lets you roll out a complete cloud product by simply integrating an agent on your server—and if data compliance, we can provide that too.",
         },
         {
-          image: "/card_img_1.png",
+          image: "/card_img_3.png",
           title: "Unified Workload Scheduling",
           description:
             "Host both virtual machines and containers on the same node, harnessing GPU or CPU resources as needed. Our integrated SDN infra allows seamless networking between VMs/VDIs, across regions.",
         },
         {
-          image: "/card_img_1.png",
+          image: "/card_img_4.png",
           title: "Flexible, Transparent Pricing",
           description:
             "With this usage, pay per VM, or subscription, you only pay for what you actually use. There's no minimum, no maximums, and no lock-in contracts.",
@@ -43,7 +44,7 @@ export const HomePageData = {
       ],
       bottomRow: [
         {
-          image: "/card_img_4.png",
+          image: "/card_img_6.png",
           title: "Enterprise-Grade Consulting & Support",
           description:
             "Our highly experienced team offers technical support, deployment support, and ongoing consulting. Whether you're expanding a data center or spinning up a brand-new infra, we're here to help.",
@@ -102,6 +103,7 @@ export const FeaturesPageData = {
   homeBanner: {
     title: "Key Features & Benefits",
     backgroundImage: "/home_banner_bg.png",
+    backgroundOverlayImage: "/home_banner_overlay.png",
   },
   singleAgent: {
     title: "Single-Agent, Multi-Cloud Simplicity",
@@ -254,7 +256,7 @@ export const FeaturesPageData = {
       "Schedule a Demo and see how easily you can integrate, expand, and scale with our solution.",
     buttonText: "Request a Demo",
     buttonLink: "#",
-    image: "/card_img_6.png",
+    image: "/card_img_11.png",
   },
 };
 
@@ -262,6 +264,7 @@ export const ServicesPageData = {
   homeBanner: {
     title: "Deployment, Services & Success Stories",
     backgroundImage: "/home_banner_bg.png",
+    backgroundOverlayImage: "/home_banner_overlay.png",
   },
   deploymentModel: {
     title: "Deployment Model",
@@ -427,6 +430,6 @@ export const ServicesPageData = {
       "Schedule a Demo and see how easily you can integrate, expand, and scale with our solution.",
     buttonText: "Request a Demo",
     buttonLink: "#",
-    image: "/card_img_6.png",
+    image: "/card_img_8.png",
   },
 };

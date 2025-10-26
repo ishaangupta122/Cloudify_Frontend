@@ -1,6 +1,7 @@
 export interface HeroBannerProps {
   title: string;
   backgroundImage?: string;
+  backgroundOverlayImage?: string;
 }
 
 export interface FeatureCardProps {

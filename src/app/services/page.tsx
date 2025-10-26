@@ -11,6 +11,7 @@ export default function ServicePage() {
       <HeroBanner
         title={heroData.homeBanner.title}
         backgroundImage={heroData.homeBanner.backgroundImage}
+        backgroundOverlayImage={heroData.homeBanner.backgroundOverlayImage}
       />
       <div className="px-6 md:px-16 max-w-7xl mx-auto">
         <ReverseFeatureSection

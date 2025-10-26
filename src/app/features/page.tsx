@@ -156,6 +156,7 @@ export default function FeaturesPage() {
       <HeroBanner
         title={heroData.homeBanner.title}
         backgroundImage={heroData.homeBanner.backgroundImage}
+        backgroundOverlayImage={heroData.homeBanner.backgroundOverlayImage}
       />
 
       {/* Single Agent Section */}

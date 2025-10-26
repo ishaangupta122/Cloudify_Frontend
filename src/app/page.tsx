@@ -19,14 +19,21 @@ import {
 function HeroSection() {
   return (
     <div
-      className="relative w-full pb-32 sm:pb-40 md:pb-48 lg:pb-56"
+      className="relative w-full pb-32 sm:pb-40 md:pb-48 lg:pb-56 z-10"
       style={{
         backgroundImage: `url('${HomePageData.homeBanner.backgroundImage}')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}>
+      <div
+        className="absolute inset-0 w-full -z-10"
+        style={{
+          backgroundImage: `url('${HomePageData.homeBanner.backgroundOverlayImage}')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}></div>
       {/* Hero Content */}
-      <div className="flex flex-col items-center gap-6 md:gap-10 max-w-7xl mx-auto px-4 sm:px-6 pt-32 w-full">
+      <div className="flex flex-col items-center gap-6 md:gap-10 max-w-7xl mx-auto px-4 sm:px-6 pt-48 w-full">
         {/* Top Badge */}
         <div className="flex justify-center md:items-center text-center bg-[#5D48EC80] backdrop-blur-sm text-white py-2 px-6 md:py-3 text-sm md:text-base font-medium shadow-lg hover:bg-[#5D48EC80] border-none rounded-md w-[85%] md:w-auto">
           <FaBolt className="inline-block mt-1 mr-2 h-4 w-4 md:h-5 md:w-5" />
