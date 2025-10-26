@@ -1,4 +1,5 @@
 import { HeroBannerProps } from "@/lib/types";
+import { motion } from "framer-motion";
 
 function HeroBanner({
   title,
@@ -23,9 +24,13 @@ function HeroBanner({
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}></div>
-      <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 text-center max-w-5xl">
+      <motion.h1
+        initial={{ opacity: 0, scale: 0.9, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="text-4xl md:text-5xl font-semibold text-gray-900 text-center max-w-5xl">
         {title}
-      </h1>
+      </motion.h1>
     </div>
   );
 }

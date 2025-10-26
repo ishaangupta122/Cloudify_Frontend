@@ -95,7 +95,7 @@ export const HomePageData = {
       "Contact Us to discuss how our platform can transform your GPU cloud strategy.",
     buttonText: "Request a Demo",
     buttonLink: "#",
-    image: "/card_img_6.png",
+    image: "/card_img_11.png",
   },
 };
 
@@ -256,7 +256,7 @@ export const FeaturesPageData = {
       "Schedule a Demo and see how easily you can integrate, expand, and scale with our solution.",
     buttonText: "Request a Demo",
     buttonLink: "#",
-    image: "/card_img_11.png",
+    image: "/card_img_8.png",
   },
 };
 
