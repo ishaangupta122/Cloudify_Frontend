@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   const ref = useRef(null);
@@ -39,26 +40,23 @@ export default function Footer() {
         className="relative z-10 container max-w-7xl mx-auto px-6 md:px-16 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
-          <motion.div variants={itemVariants} className="md:col-span-2">
-            <motion.div
-              className="flex items-center gap-2 mb-4"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}>
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-2 mb-4">
               <img
                 src="/logo_white.png"
                 alt="Cloudify Logo"
                 className="h-10 w-auto"
               />
-            </motion.div>
+            </div>
             <p className="text-sm text-purple-100 leading-relaxed md:w-[80%] w-full">
               Streamline your business's financial management with our
               intuitive, scalable SaaS platform. Designed for U.S. enterprises
               and startups equally, complete in modules.
             </p>
-          </motion.div>
+          </div>
 
           {/* Useful Links */}
-          <motion.div variants={itemVariants}>
+          <div>
             <h3 className="font-semibold text-lg mb-4">Useful Link</h3>
             <ul className="space-y-2 text-sm text-purple-100">
               {[
@@ -67,20 +65,17 @@ export default function Footer() {
                 "Deployment and Services",
                 "Contact Us",
               ].map((link, index) => (
-                <motion.li
-                  key={index}
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}>
-                  <a href="#" className="hover:text-white transition-colors">
+                <li key={index}>
+                  <Link href="#" className="hover:text-white transition-colors">
                     {link}
-                  </a>
-                </motion.li>
+                  </Link>
+                </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Contact Section */}
-          <motion.div variants={itemVariants}>
+          <div>
             <h3 className="font-semibold text-lg mb-4">
               Get In Touch With Us!
             </h3>
@@ -88,10 +83,7 @@ export default function Footer() {
               If you're ready to sign up with us or if you have any questions,
               you are glad to touch.
             </p>
-            <motion.div
-              className="flex items-center gap-3"
-              whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.2 }}>
+            <div className="flex items-center gap-3">
               <div className="rounded-full">
                 <img
                   src="/phone_icon.png"
@@ -103,8 +95,8 @@ export default function Footer() {
                 <div className="text-sm font-medium">Contact Us:</div>
                 <div className="text-sm font-semibold">+1 (801) 893-3654</div>
               </div>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
 
         {/* Copyright */}

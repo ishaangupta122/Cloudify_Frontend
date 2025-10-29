@@ -51,14 +51,14 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-[#111111] hover:text-indigo-600 hover:-translate-y-1 transition-all duration-200 font-medium">
+              className="text-[#111111] hover:text-indigo-600 transition-all duration-200 font-medium">
               {link.label}
             </Link>
           ))}
           <Button
             asChild
             size="lg"
-            className="bg-[#5D48EC] hover:bg-indigo-700 hover:scale-105 text-[#FFFFFF] px-6 py-3 font-semibold transition-transform duration-200">
+            className="bg-[#5D48EC] hover:bg-indigo-700 text-[#FFFFFF] px-6 py-3 font-semibold transition-transform duration-200">
             <Link href="#">Request a Demo</Link>
           </Button>
         </div>
